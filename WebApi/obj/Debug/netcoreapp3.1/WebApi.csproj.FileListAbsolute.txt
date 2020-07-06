@@ -43,9 +43,6 @@ d:\studia\Angular\sem_VI\Zadanie_3\WebApi\bin\Debug\netcoreapp3.1\SQLitePCLRaw.b
 d:\studia\Angular\sem_VI\Zadanie_3\WebApi\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
 d:\studia\Angular\sem_VI\Zadanie_3\WebApi\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
 d:\studia\Angular\sem_VI\Zadanie_3\WebApi\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
-d:\studia\Angular\sem_VI\Zadanie_3\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
-d:\studia\Angular\sem_VI\Zadanie_3\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
-d:\studia\Angular\sem_VI\Zadanie_3\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 d:\studia\Angular\sem_VI\Zadanie_3\WebApi\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 d:\studia\Angular\sem_VI\Zadanie_3\WebApi\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 d:\studia\Angular\sem_VI\Zadanie_3\WebApi\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
@@ -76,9 +73,6 @@ d:\studia\Angular\sem_VI\Zadanie_3\WebApi\bin\Debug\netcoreapp3.1\runtimes\win\l
 d:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\WebApi.csprojAssemblyReference.cache
 d:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\WebApi.AssemblyInfoInputs.cache
 d:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\WebApi.AssemblyInfo.cs
-d:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\WebApi.csproj.CoreCompileInputs.cache
-d:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\WebApi.MvcApplicationPartsAssemblyInfo.cs
-d:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\WebApi.MvcApplicationPartsAssemblyInfo.cache
 d:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\WebApi.RazorTargetAssemblyInfo.cache
 D:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\WebApi.csproj.CopyComplete
 d:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\staticwebassets\WebApi.StaticWebAssets.Manifest.cache
@@ -86,3 +80,9 @@ d:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\staticwebasset
 d:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\WebApi.dll
 d:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\WebApi.pdb
 D:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\WebApi.genruntimeconfig.cache
+D:\studia\Angular\sem_VI\Zadanie_3\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\studia\Angular\sem_VI\Zadanie_3\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\studia\Angular\sem_VI\Zadanie_3\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+d:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\WebApi.csproj.CoreCompileInputs.cache
+d:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\WebApi.MvcApplicationPartsAssemblyInfo.cs
+d:\studia\Angular\sem_VI\Zadanie_3\WebApi\obj\Debug\netcoreapp3.1\WebApi.MvcApplicationPartsAssemblyInfo.cache

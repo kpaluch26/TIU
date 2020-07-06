@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj": {}
+    "D:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "d:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj": {
+    "D:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "D:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "d:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj",
+        "projectPath": "D:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\Kamil\\.nuget\\packages\\",
-        "outputPath": "d:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\obj\\",
+        "outputPath": "D:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -63,11 +63,15 @@
             },
             "Microsoft.OpenApi": {
               "target": "Package",
-              "version": "[1.2.0-preview.3, )"
+              "version": "[1.1.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[5.5.1, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

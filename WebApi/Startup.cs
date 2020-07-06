@@ -15,6 +15,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using WebApi.Models;
+using System.Reflection;
+using System.IO;
 
 namespace WebApi
 {
@@ -42,7 +44,7 @@ namespace WebApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "StudentAPI",
+                    Title = "MyStudentAPI",
                     Version = "v1",
                     Description = "Dokumentacja dla projektu",
                     Contact = new OpenApiContact
@@ -59,7 +61,7 @@ namespace WebApi
             {
                 options.AddPolicy("developerska", builder =>
                 {
-                    builder //.WithOrigins("http://localhost:4200")
+                    builder
                         .AllowAnyOrigin()
                         .AllowAnyMethod()
                         .AllowAnyHeader()
@@ -80,8 +82,8 @@ namespace WebApi
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
 
-                    ValidIssuer = "http://localhost:44336",
-                    ValidAudience = "http://localhost:44336",
+                    ValidIssuer = "http://localhost:5001",
+                    ValidAudience = "http://localhost:5001",
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superSecretKey@345"))
                 };
             });
@@ -97,6 +99,19 @@ namespace WebApi
                 app.UseDeveloperExceptionPage();
             }
 
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger(//c =>
+               //c.RouteTemplate = "MyStudentApi/swagger/v1/swagger.json"
+            ); //;
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyStudentApi");
+                //c.RoutePrefix = "MyStudentApi/swagger";
+            });
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -106,16 +121,6 @@ namespace WebApi
             app.UseAuthentication();
 
             app.UseAuthorization();
-
-            // Enable middleware to serve generated Swagger as a JSON endpoint.
-            app.UseSwagger();
-
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
-            // specifying the Swagger JSON endpoint.
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-            });
 
             app.UseEndpoints(endpoints =>
             {
