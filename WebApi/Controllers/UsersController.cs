@@ -20,12 +20,12 @@ namespace WebApi.Controllers
             _context = context;
         }
         [HttpGet, Authorize]
-        public IEnumerable<User> Get()
+        public IEnumerable<User> GetAllStudent()
         {
             return _context.Users.ToList();
         }
         [HttpGet("{id}"), Authorize]
-        public User GetOne(int id)
+        public User GetSpecifiedStudent(int id)
         {
             return _context.Users.SingleOrDefault(m => m.Id == id);
         }

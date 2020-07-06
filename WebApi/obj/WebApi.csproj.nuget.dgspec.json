@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj": {}
+    "d:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "D:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj": {
+    "d:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "d:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "D:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj",
+        "projectPath": "d:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\Kamil\\.nuget\\packages\\",
-        "outputPath": "D:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\obj\\",
+        "outputPath": "d:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

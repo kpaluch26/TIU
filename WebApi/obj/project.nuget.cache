@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JIEaveXrraef/ua5Dfub/iQSLeIua4aY2qcexbkiuVPjACUVUDnzwF7Bi2eDz6srDRt+4xpfFf+g28EuT94wrQ==",
+  "dgSpecHash": "TcUzokXoI1HSb7gTtU1FIp1G2ylAYTwhHZl70X+NFGRTafghwZe10zjwzkZMBqMuiKIq7y+nke4i/qqaBfzSnQ==",
   "success": true,
-  "projectFilePath": "D:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj",
+  "projectFilePath": "d:\\studia\\Angular\\sem_VI\\Zadanie_3\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kamil\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.5\\microsoft.aspnetcore.authentication.jwtbearer.3.1.5.nupkg.sha512",
     "C:\\Users\\Kamil\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
