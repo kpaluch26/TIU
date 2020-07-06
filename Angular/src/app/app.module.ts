@@ -19,7 +19,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { StudentComponent } from './student/student.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { StudentNewFormComponent } from './student-new-form/student-new-form.component';
 import { MatInputModule } from '@angular/material/input';
@@ -43,7 +42,6 @@ export function tokenGetter() {
     TileViewComponent,
     TileComponent,
     StudentComponent,
-    PageNotFoundComponent,
     StudentDetailsComponent,
     StudentNewFormComponent,
     LoginComponent
