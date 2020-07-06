@@ -17,11 +17,9 @@ export class StudentDetailsComponent implements OnInit {
   edit: boolean;
 
   images = [
-    'assets\\avatar_1.png',
-    'assets\\avatar_2.png',
-    'assets\\avatar_3.png',
-    'assets\\avatar_4.png',
-    'assets\\avatar_5.png'
+    'assets\\img1.png',
+    'assets\\img2.png',
+    'assets\\img3.png'
   ];
 
   constructor(private route: ActivatedRoute, private studentsService: StudentsServerService) {

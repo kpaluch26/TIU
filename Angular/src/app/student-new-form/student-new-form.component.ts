@@ -4,8 +4,9 @@ import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms'
 import { Observable } from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 import { Student } from '../student';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
-export interface Avatar {
+export interface Image {
   name: string;
 }
 
@@ -16,54 +17,47 @@ export interface Avatar {
 })
 export class StudentNewFormComponent implements OnInit {
   public stateCtrl = new FormControl();
-  public filteredStates: Observable<Avatar[]>;
+  public filteredStates: Observable<Image[]>;
 
   public newForm: FormGroup;
 
-  avatar: Avatar[] = [
+  images: Image[] = [
     {
-      name: 'assets\\avatar_1.png',
+      name: 'assets\\img1.png',
     },
     {
-      name: 'assets\\avatar_2.png',
+      name: 'assets\\img2.png',
     },
     {
-      name: 'assets\\avatar_3.png',
-    },
-    {
-      name: 'assets\\avatar_4.png',
-    },
-    {
-      name: 'assets\\avatar_5.png',
+      name: 'assets\\img3.png',
     }
   ];
 
-  constructor(fb: FormBuilder, private studentsService: StudentsServerService) {
+  constructor(fb: FormBuilder, private studentsService: StudentsServerService, private _snackBar: MatSnackBar) {
     this.filteredStates = this.stateCtrl.valueChanges
       .pipe(
         startWith(''),
-        map(state => state ? this._filterStates(state) : this.avatar.slice())
+        map(state => state ? this._filterStates(state) : this.images.slice())
       );
       this.newForm = fb.group({
         id: new FormControl(0),
-        avatar: new FormControl(null, [Validators.required]),
+        images: new FormControl(null, [Validators.required]),
         name: new FormControl(null, [Validators.required, Validators.minLength(3)]),
         surname: new FormControl(null, [Validators.required, Validators.minLength(3)]),
-        job: new FormControl(null, [Validators.required]),
-        descript: new FormControl(null, [Validators.required]),
+        hobby: new FormControl(null, [Validators.required]),
       });
   }
 
-  private _filterStates(value: string): Avatar[] {
+  private _filterStates(value: string): Image[] {
     const filterValue = value.toLowerCase();
 
-    return this.avatar.filter(avatar => avatar.name.toLowerCase().indexOf(filterValue) === 0);
+    return this.images.filter(images => images.name.toLowerCase().indexOf(filterValue) === 0);
   }
 
-  public test() {
+  /*public test() {
     let newStudent = this.newForm.value as Student;
     console.log(newStudent);
-  }
+  }*/
 
   public onSubmit() {
     let newStudent = this.newForm.value as Student;
@@ -76,4 +70,9 @@ export class StudentNewFormComponent implements OnInit {
   getErrorMessage() {
     return 'To pole musi być wypełnione';
   }
+  openSnackBar() {
+    this._snackBar.open("Worker created","Ok" , {
+      duration: 2000,
+    });
+}
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Student } from '../student';
 import { StudentsServerService } from '../students-server.service';
+import { CsvserviceService } from '../csvservice.service';
 
 @Component({
   selector: 'app-table-view',
@@ -17,7 +18,7 @@ export class TableViewComponent implements OnInit {
 
   @Output("loadStudents") loadStudents: EventEmitter<any> = new EventEmitter();
 
-  constructor(private studentsService: StudentsServerService) {
+  constructor(private studentsService: StudentsServerService, private exporter:CsvserviceService) {
 
   }
 
@@ -40,6 +41,10 @@ export class TableViewComponent implements OnInit {
     else {
       return false;
     }
+  }
+
+  downloadCSV(){
+    this.exporter.downloadCSV(this.students);
   }
 
 }

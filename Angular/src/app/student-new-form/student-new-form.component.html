@@ -11,9 +11,9 @@
                     <input matInput autocomplete="off" placeholder="Image" aria-label="Image" [matAutocomplete]="auto"
                         [formControl]="stateCtrl" id="image" formControlName="image">
                     <mat-autocomplete #auto="matAutocomplete">
-                        <mat-option *ngFor="let image of filteredStates | async" [value]="image.name">
-                            <img class="example-option-img" aria-hidden [src]="image.name" height="25">
-                            <span>{{image.name}}</span>
+                        <mat-option *ngFor="let im of filteredStates | async" [value]="im.name">
+                            <img class="example-option-img" aria-hidden [src]="im.name" height="25">
+                            <span>{{im.name}}</span>
                         </mat-option>
                     </mat-autocomplete>
                     
