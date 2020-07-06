@@ -1,0 +1,11 @@
+.mat-grid-tile{
+    background-color: yellow;
+}
+.mat-grid-tile:hover{
+    background-color: orange;
+}
+.tileViewGrid{
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 1px;
+}

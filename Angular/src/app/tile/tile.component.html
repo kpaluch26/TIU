@@ -1,0 +1,16 @@
+<div>
+    <div style="display: inline-block; width: 50%;">
+        <img src={{student.image}} alt="img" width=100px;>
+    </div>
+    <div style="display: inline-block; width: 50%; ">
+        <div style="padding: 2px;">
+            <div>Imię: {{student.name}}</div>
+            <div>Nazwisko: {{student.surname}}</div>
+            <div>Hobby:  {{student.hobby}}</div>
+            <div *ngIf="isAdminAuthenticated() == true">
+                <button [routerLink]="['/student', student.id]" mat-icon-button title="Details"><mat-icon>account_box</mat-icon></button>
+                <button mat-icon-button (click)='deleteStudent(student.id)' title="Delete"><mat-icon>delete</mat-icon></button>
+            </div>
+        </div>
+    </div>
+</div>

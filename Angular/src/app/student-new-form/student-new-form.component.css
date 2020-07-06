@@ -1,0 +1,22 @@
+.profileView {
+    position: relative;
+    height: 800px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+.example-form {
+    width: 100%;
+  }
+  
+.example-full-width {
+    width: 100%;
+}
+.example-option-img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+  
+[dir='rtl'] .example-option-img {
+    margin-right: 0;
+    margin-left: 8px;
+}

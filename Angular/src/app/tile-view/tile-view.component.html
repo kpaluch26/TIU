@@ -1,0 +1,7 @@
+<div *ngIf="showTileContent" class="tileViewGrid">
+    <mat-grid-list  cols="3" rowHeight="200px" style="height: calc(401px);">
+        <mat-grid-tile *ngFor="let student of students" >
+            <app-tile [student]="student" (loadStudentsSignal)="loadStudentsSignal()"></app-tile>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

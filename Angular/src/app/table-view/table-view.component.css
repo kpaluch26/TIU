@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+}
+
+.mat-row.cdk-row:hover{
+    background-color: rgba(96, 4, 99, 0.5);
+}
+
+.tableView {
+    max-width: 960px;
+    margin: 20px auto;
+}
