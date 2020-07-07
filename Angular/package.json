@@ -24,6 +24,8 @@
     "@auth0/angular-jwt": "^4.2.0",
     "@ionic/storage": "^2.2.0",
     "@material/grid-list": "^4.0.0",
+    "angular-csv": "^1.0.0",
+    "angular7-csv": "^0.2.12",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
