@@ -58,7 +58,6 @@ export class StudentDetailsComponent implements OnInit {
     this.edit = false;
   }
   public onSubmit() {
-    //console.log(this.student);
     this.studentsService.updateStudent(this.selectedId,this.student).subscribe(result => console.log(result));
   }
 
