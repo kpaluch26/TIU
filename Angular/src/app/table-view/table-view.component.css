@@ -3,7 +3,7 @@ table {
 }
 
 .mat-row.cdk-row:hover{
-    background-color: rgba(96, 4, 99, 0.5);
+    background-color: orange;
 }
 
 .tableView {

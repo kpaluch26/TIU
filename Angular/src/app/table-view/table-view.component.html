@@ -42,4 +42,4 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
   
-  <button (click)="downloadCSV()" >Download CSV</button>
+  <button *ngIf="showTableContent" (click)="downloadCSV()" >Download CSV</button>
