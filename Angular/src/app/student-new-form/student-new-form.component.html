@@ -8,7 +8,7 @@
         <mat-card class="example-card">
             <mat-card-content>
                 <mat-form-field class="example-full-width">
-                    <input matInput autocomplete="off" placeholder="Image" aria-label="Image" [matAutocomplete]="auto"
+                    <input matInput autocomplete="off" placeholder="Zdjęcie" aria-label="Image" [matAutocomplete]="auto"
                         [formControl]="stateCtrl" id="image" formControlName="image">
                     <mat-autocomplete #auto="matAutocomplete">
                         <mat-option *ngFor="let im of filteredStates | async" [value]="im.name">

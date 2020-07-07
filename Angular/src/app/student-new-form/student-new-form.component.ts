@@ -4,9 +4,8 @@ import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms'
 import { Observable } from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 import { Student } from '../student';
-import { MatSnackBar } from '@angular/material/snack-bar';
 
-export interface Image {
+export interface Img {
   name: string;
 }
 
@@ -17,11 +16,11 @@ export interface Image {
 })
 export class StudentNewFormComponent implements OnInit {
   public stateCtrl = new FormControl();
-  public filteredStates: Observable<Image[]>;
+  public filteredStates: Observable<Img[]>;
 
   public newForm: FormGroup;
 
-  images: Image[] = [
+  img: Img[] = [
     {
       name: 'assets\\img1.png',
     },
@@ -33,31 +32,26 @@ export class StudentNewFormComponent implements OnInit {
     }
   ];
 
-  constructor(fb: FormBuilder, private studentsService: StudentsServerService, private _snackBar: MatSnackBar) {
+  constructor(fb: FormBuilder, private studentsService: StudentsServerService) {
     this.filteredStates = this.stateCtrl.valueChanges
       .pipe(
         startWith(''),
-        map(state => state ? this._filterStates(state) : this.images.slice())
+        map(state => state ? this._filterStates(state) : this.img.slice())
       );
       this.newForm = fb.group({
         id: new FormControl(0),
-        images: new FormControl(null, [Validators.required]),
+        image: new FormControl(null, [Validators.required]),
         name: new FormControl(null, [Validators.required, Validators.minLength(3)]),
         surname: new FormControl(null, [Validators.required, Validators.minLength(3)]),
         hobby: new FormControl(null, [Validators.required]),
       });
   }
 
-  private _filterStates(value: string): Image[] {
+  private _filterStates(value: string): Img[] {
     const filterValue = value.toLowerCase();
 
-    return this.images.filter(images => images.name.toLowerCase().indexOf(filterValue) === 0);
+    return this.img.filter(img => img.name.toLowerCase().indexOf(filterValue) === 0);
   }
-
-  /*public test() {
-    let newStudent = this.newForm.value as Student;
-    console.log(newStudent);
-  }*/
 
   public onSubmit() {
     let newStudent = this.newForm.value as Student;
@@ -70,9 +64,5 @@ export class StudentNewFormComponent implements OnInit {
   getErrorMessage() {
     return 'To pole musi być wypełnione';
   }
-  openSnackBar() {
-    this._snackBar.open("Worker created","Ok" , {
-      duration: 2000,
-    });
-}
+
 }

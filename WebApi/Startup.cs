@@ -82,8 +82,8 @@ namespace WebApi
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
 
-                    ValidIssuer = "http://localhost:5001",
-                    ValidAudience = "http://localhost:5001",
+                    ValidIssuer = "http://localhost:44336",
+                    ValidAudience = "http://localhost:44336",
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superSecretKey@345"))
                 };
             });
